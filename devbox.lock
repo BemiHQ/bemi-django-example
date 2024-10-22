@@ -1,0 +1,56 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "pipenv@latest": {
+      "last_modified": "2024-10-13T23:44:06Z",
+      "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#pipenv",
+      "source": "devbox-search",
+      "version": "2024.1.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/rr7d9mhp9x7crzv3lgv7gm85scf7qp3y-pipenv-2024.1.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/xyvkxcv2406xr9m15ap782i71g1790s9-pipenv-2024.1.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/9jglmp7ng6hc2a3ksaaipwyf9ccnr4in-pipenv-2024.1.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/zpya6pq7bglw78nzhmq5ab1vajy2s55a-pipenv-2024.1.0"
+        }
+      }
+    },
+    "postgresql@latest": {
+      "last_modified": "2024-10-18T15:35:18Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/ccc0c2126893dd20963580b6478d1a10a4512185#postgresql",
+      "source": "devbox-search",
+      "version": "16.4",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/6dzxj78wph840cpwslh96s4gpm0iwch2-postgresql-16.4"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/37r0vmsb8xd1kv3wjd99kr59q99ja3g0-postgresql-16.4"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/vlgydd1rakmw9j14i8dgrlhzj4pa82vi-postgresql-16.4"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/mjjfx6yyaaba5hmv6bga20m8fxrca93l-postgresql-16.4"
+        }
+      }
+    },
+    "python310": {
+      "plugin_version": "0.0.3",
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#python310",
+      "source": "nixpkg"
+    },
+    "python310Packages.pip": {
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#python310Packages.pip",
+      "source": "nixpkg"
+    }
+  }
+}

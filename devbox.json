@@ -1,0 +1,12 @@
+{
+  "packages": [
+    "postgresql@latest",
+    "python310",
+    "python310Packages.pip",
+    "pipenv@latest"
+  ],
+  "shell": {
+    "init_hook": ". $VENV_DIR/bin/activate",
+    "scripts":   {}
+  }
+}
