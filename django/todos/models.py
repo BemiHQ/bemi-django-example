@@ -1,6 +1,7 @@
 from django.db import models
+from bemi import BemiRecordMixin
 
-class Todo(models.Model):
+class Todo(BemiRecordMixin, models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     completed = models.BooleanField(default=False)

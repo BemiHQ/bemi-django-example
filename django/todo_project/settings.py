@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -81,15 +82,23 @@ WSGI_APPLICATION = 'todo_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bemi_dev_source',         
-        'USER': 'postgres',                
-        'PASSWORD': 'postgres',            
-        'HOST': '127.0.0.1',               
-        'PORT': '5434',                     
+        'NAME': 'bemi_dev_source',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '127.0.0.1',
+        'PORT': '5434',
+    },
+    'bemi': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DESTINATION_DB_DATABASE'),
+        'USER': os.getenv('DESTINATION_DB_USERNAME'),
+        'PASSWORD': os.getenv('DESTINATION_DB_PASSWORD'),
+        'HOST': os.getenv('DESTINATION_DB_HOST'),
+        'PORT': os.getenv('DESTINATION_DB_PORT'),
     }
 }
 
-
+DATABASE_ROUTERS = ['bemi.BemiDatabaseRouter']
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

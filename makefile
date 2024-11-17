@@ -44,3 +44,6 @@ sh:
 
 migrate:
 	devbox run --env-file ./django/.env "cd django && python manage.py migrate"
+
+shell:
+	devbox run --env-file ./django/.env "cd django && python manage.py shell"
