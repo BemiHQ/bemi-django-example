@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "==3.2"
 psycopg2-binary = "*"
-bemi-django = "==0.0.9"
+bemi-django = "==0.1.0"
 
 [dev-packages]
 
